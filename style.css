@@ -1,0 +1,88 @@
+*{
+    text-decoration: none;
+    color: #161269;
+}
+
+/* ajustar as fontes da página */
+.inria-serif-light {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-serif-regular {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-serif-light-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-serif-regular-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-serif-bold-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.container{
+    padding: 25px;
+}
+
+.banner-superior-home{
+    background-image: url(assets/Praça_da_Convivência_em_Detalhes-removebg-preview\ 3.png);
+    background-size: cover;
+    background-color: #161269;
+    height: 359px;
+    border-radius: 45px;
+    margin-bottom: 3%;
+}
+
+.menu-superior{
+    border-top-style: solid;
+    /* border-style:solid; */
+    border-color:#161269;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+}
+
+menu{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+}
+
+.banner-pesquisa{
+    margin-top: 1%;
+    width: 93%;
+    height: 203px;
+    background-image: url(assets/Group\ 2.png);
+    background-size: cover;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-banner{
+    color: #fff;
+}
