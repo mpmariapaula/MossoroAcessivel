@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.container-locais{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.corpo{
+    width: 90%;
+    padding: 45px;
+}
+
+.detalhe-lateral{
+    width: 5%;
+    height: 100%;
+}
+
+.titulo{
+    color: #161269;
+}
+
+.menu-paginas{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-locais{
+    display: flex;
+    flex-direction: column;
+    color: #161269;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+}
+
+.img-menu-locais{
+    width: 152px;
+}
