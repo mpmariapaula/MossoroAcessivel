@@ -86,3 +86,13 @@ menu{
 .titulo-banner{
     color: #fff;
 }
+
+.rodape{
+  background-color: #161269;
+  border-radius: 25px;
+  width: 100%;
+  bottom:0%;
+  color: #fff;
+  text-align: center; /* Alinha o texto ao centro */
+  flex-direction: column;    /* Organiza os elementos em coluna (verticalmente) */
+}
