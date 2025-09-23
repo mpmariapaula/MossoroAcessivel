@@ -11,7 +11,7 @@
 
 .corpo{
     width: 90%;
-    padding: 45px;
+    padding: 8%;
 }
 
 .detalhe-lateral{
@@ -26,6 +26,7 @@
 .menu-paginas{
     display: flex;
     flex-direction: row;
+    padding-bottom: 30px;
 }
 
 .menu-locais{
@@ -39,4 +40,45 @@
 
 .img-menu-locais{
     width: 152px;
+}
+
+.todos-restaurantes{
+    padding-top: 50px;
+}
+
+.restaurantes-linha{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.restaurante{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-detalhes-local{
+    color: #161269;
+    font-size: 28px;
+}
+
+.img-locais-detalhes{
+    width: 205px;
+}
+
+.botao-detalhes{
+    border-radius: 22px;
+    background-color: #161269;
+    color: #fff;
+    width: 221px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
