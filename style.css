@@ -96,3 +96,39 @@ menu{
   text-align: center; /* Alinha o texto ao centro */
   flex-direction: column;    /* Organiza os elementos em coluna (verticalmente) */
 }
+
+.elementostitulo{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 25px 24% 25px 7%;
+  font-size: 20px;
+  flex-direction: row;
+}
+
+.elementotitulo{
+  align-content: center;
+  justify-content: space-around;
+  display: flex;
+  width: 15%;
+  background-color: #161269;
+  border-radius: 45px;
+}
+
+.subtitulohome{
+  color: azure;
+}
+
+.elements{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.noticias{
+  margin-left: 8%;
+}
+
+.avisuais{
+  margin-right: 4%
+}
