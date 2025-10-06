@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0px;
     text-decoration: none;
@@ -167,4 +168,175 @@ input:checked~label {
         transform: scale(1.2);
     }
 
+=======
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.container-locais{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.corpo{
+    width: 90%;
+    padding: 8%;
+}
+
+.detalhe-lateral{
+    width: 5%;
+    height: 100%;
+}
+
+.titulo{
+    color: #161269;
+}
+
+.menu-paginas{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.menu-locais{
+    display: flex;
+    flex-direction: column;
+    color: #161269;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+}
+
+.img-menu-locais{
+    width: 152px;
+}
+
+
+.todos-restaurantes{
+    padding-top: 50px;
+}
+
+.restaurantes-linha{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.restaurante{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-detalhes-local{
+    color: #161269;
+    font-size: 28px;
+}
+
+.img-locais-detalhes{
+    width: 205px;
+}
+
+.checked {
+    
+    color: #161269;
+    align-items: row;
+  }
+
+.botao-detalhes{
+    border-radius: 22px;
+    background-color: #161269;
+    color: #fff;
+    width: 221px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css');
+
+
+.rating-box {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.rating-box label {
+    font-size: 45px;
+    cursor: pointer;
+    background-color: #161269;
+    border-radius: 15px;
+    
+    gap: 20px;
+    width: 35px;
+}
+
+input:not(:checked)~label {
+    color: #161269;
+    transition: .3s;
+}
+
+input:checked~label {
+    color: #150187;
+    animation: filling-animation .7s forwards;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
+
+.emojis {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    bottom: -80px;
+    font-size: 40px;
+    color: #161269;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
+
+#rating-1:checked~.emojis::after {
+    content: '😞';
+}
+
+#rating-2:checked~.emojis::after {
+    content: '😐';
+}
+
+#rating-3:checked~.emojis::after {
+    content: '🙂';
+}
+
+#rating-4:checked~.emojis::after {
+    content: '😃';
+}
+
+#rating-5:checked~.emojis::after {
+    content: '😍';
+}
+
+@keyframes filling-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
+>>>>>>> 008c22954fe1e79cb3b59665aa2bcd18196d785a
 }
