@@ -42,6 +42,7 @@
     width: 152px;
 }
 
+
 .todos-restaurantes{
     padding-top: 50px;
 }
@@ -72,6 +73,12 @@
     width: 205px;
 }
 
+.checked {
+    
+    color: #161269;
+    align-items: row;
+  }
+
 .botao-detalhes{
     border-radius: 22px;
     background-color: #161269;
@@ -81,4 +88,83 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css');
+
+
+.rating-box {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.rating-box label {
+    font-size: 45px;
+    cursor: pointer;
+    background-color: #161269;
+    border-radius: 15px;
+    
+    gap: 20px;
+    width: 35px;
+}
+
+input:not(:checked)~label {
+    color: #161269;
+    transition: .3s;
+}
+
+input:checked~label {
+    color: #150187;
+    animation: filling-animation .7s forwards;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
+
+.emojis {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    bottom: -80px;
+    font-size: 40px;
+    color: #161269;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
+
+#rating-1:checked~.emojis::after {
+    content: '😞';
+}
+
+#rating-2:checked~.emojis::after {
+    content: '😐';
+}
+
+#rating-3:checked~.emojis::after {
+    content: '🙂';
+}
+
+#rating-4:checked~.emojis::after {
+    content: '😃';
+}
+
+#rating-5:checked~.emojis::after {
+    content: '😍';
+}
+
+@keyframes filling-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
 }

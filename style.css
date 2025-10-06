@@ -87,6 +87,23 @@ menu{
     color: #fff;
 }
 
+.search-box-button{
+  size: 2cap;
+  margin-top: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.search-box-button img { width: 25px; /* Ajuste o tamanho do ícone */
+  height: 20px; /* Mantém a proporção */
+  margin-left: 5px; s
+
+}
+
+
 .rodape{
   background-color: #161269;
   border-radius: 25px;
@@ -131,4 +148,23 @@ menu{
 
 .avisuais{
   margin-right: 4%
+}
+
+.colunasites{
+  margin-left: 67%;
+  flex-direction: column;
+  font-size: 120%;
+}
+
+.box-busca{
+  margin-left: 47%;
+  
+}
+
+.search-box-input { 
+  height: 20px;
+  margin-top: 26px;
+  margin-left: 5px;]
+  
+
 }
