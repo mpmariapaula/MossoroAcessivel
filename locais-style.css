@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.container-locais{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.corpo{
+    width: 90%;
+    padding: 8%;
+}
+
+.detalhe-lateral{
+    width: 5%;
+    height: 100%;
+}
+
+.titulo{
+    color: #161269;
+}
+
+.menu-paginas{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.menu-locais{
+    display: flex;
+    flex-direction: column;
+    color: #161269;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+}
+
+.img-menu-locais{
+    width: 152px;
+}
+
+
+.todos-restaurantes{
+    padding-top: 50px;
+}
+
+.restaurantes-linha{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.restaurante{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-detalhes-local{
+    color: #161269;
+    font-size: 28px;
+}
+
+.img-locais-detalhes{
+    width: 205px;
+}
+
+.checked {
+    
+    color: #161269;
+    align-items: row;
+  }
+
+.botao-detalhes{
+    border-radius: 22px;
+    background-color: #161269;
+    color: #fff;
+    width: 221px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+.rating-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+  }
+  
+  /* Estrelas */
+  .rating-box label {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; 
+    font-size: 32px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .rating-box label:hover,
+  .rating-box label:hover ~ label {
+    color: #f5c518; 
+  }
+  
+  input:checked ~ label {
+    color: #f5c518; /
+  }
+  
+  
+  .emojis {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+input[id^="rating"][id$="-1"]:checked ~ .emojis::after { content: '😞'; }
+input[id^="rating"][id$="-2"]:checked ~ .emojis::after { content: '😐'; }
+input[id^="rating"][id$="-3"]:checked ~ .emojis::after { content: '🙂'; }
+input[id^="rating"][id$="-4"]:checked ~ .emojis::after { content: '😃'; }
+input[id^="rating"][id$="-5"]:checked ~ .emojis::after { content: '😍'; }
+
+  
+
+  
