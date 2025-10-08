@@ -90,81 +90,54 @@
     justify-content: center;
 }
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 .rating-box {
-    gap: 20px;
     display: flex;
-    position: relative;
     flex-direction: row-reverse;
-}
-
-.rating-box label {
-    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+  }
+  
+  /* Estrelas */
+  .rating-box label {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; 
+    font-size: 32px;
+    color: #ccc;
     cursor: pointer;
-    background-color: #161269;
-    border-radius: 15px;
-    
-    gap: 20px;
-    width: 35px;
-}
-
-input:not(:checked)~label {
-    color: #161269;
-    transition: .3s;
-}
-
-input:checked~label {
-    color: #150187;
-    animation: filling-animation .7s forwards;
-    filter: drop-shadow(0px 0px 10px #ffffff3f);
-}
-
-.emojis {
-    width: 100%;
-    height: fit-content;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .rating-box label:hover,
+  .rating-box label:hover ~ label {
+    color: #f5c518; 
+  }
+  
+  input:checked ~ label {
+    color: #f5c518; /
+  }
+  
+  
+  .emojis {
     position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
     text-align: center;
-    bottom: -80px;
-    font-size: 40px;
-    color: #161269;
-    filter: drop-shadow(0px 0px 10px #ffffff3f);
-}
+    font-size: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+input[id^="rating"][id$="-1"]:checked ~ .emojis::after { content: '😞'; }
+input[id^="rating"][id$="-2"]:checked ~ .emojis::after { content: '😐'; }
+input[id^="rating"][id$="-3"]:checked ~ .emojis::after { content: '🙂'; }
+input[id^="rating"][id$="-4"]:checked ~ .emojis::after { content: '😃'; }
+input[id^="rating"][id$="-5"]:checked ~ .emojis::after { content: '😍'; }
 
-#rating-1:checked~.emojis::after {
-    content: '😞';
-}
+  
 
-#rating-2:checked~.emojis::after {
-    content: '😐';
-}
-
-#rating-3:checked~.emojis::after {
-    content: '🙂';
-}
-
-#rating-4:checked~.emojis::after {
-    content: '😃';
-}
-
-#rating-5:checked~.emojis::after {
-    content: '😍';
-}
-
-@keyframes filling-animation {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    30% {
-        transform: scale(0);
-    }
-
-    60% {
-        transform: scale(1.2);
-    }
-
-}
+  
