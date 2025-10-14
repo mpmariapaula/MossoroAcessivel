@@ -1,0 +1,61 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    border-radius: 8px;
+    padding: 40px 20px;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  
+  .titulo {
+    color: #1d1b69;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  
+  .imagem-local {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .tag {
+    background-color: #161269;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+  .descricao {
+    font-size: 15px;
+    color: #161269;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
