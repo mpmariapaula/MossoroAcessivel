@@ -73,6 +73,7 @@
 .img-locais-detalhes{
     width: 205px;
     height: 150px;
+    border-radius: 15px;
 }
 
 .checked {
@@ -141,5 +142,6 @@ input[id^="rating"][id$="-4"]:checked ~ .emojis::after { content: '😃'; }
 input[id^="rating"][id$="-5"]:checked ~ .emojis::after { content: '😍'; }
 
   
+
 
   
