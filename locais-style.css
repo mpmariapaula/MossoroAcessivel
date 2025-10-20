@@ -120,7 +120,7 @@
   }
   
   input:checked ~ label {
-    color: #f5c518; /
+    color: #f5c518; 
   }
   
   
