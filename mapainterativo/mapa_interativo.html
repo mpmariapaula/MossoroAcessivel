@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interativo</title>
+    <title>Mossoró Acessivel</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <H1>Mapa Interativo</H1>
+    <div class="container">
+        <div class="banner-superior-home"></div>
+        
+        <div class="menu-superior">
+            <menu>
+                <a href="../index.html">Home</a>
+                <a href="../locais.html">Locais</a>
+                <a href="mapa_interativo.html">Mapa Interativo</a>
+                <a href="../leis.html">Leis de Acessibilidade</a>
+                <a href="../sobrenos/sobre_nos.html">Sobre Nós</a>
+                <a href="../para_voce.html">Para Você</a>
+            </menu>
+        </div>
+
+        <div class="banner-pesquisa">
+            <h1 class="titulo-banner">
+                Mossoró Acessivel
+            </h1>
+            <div class="box-busca">
+
+                <div class="search-box">
+                    
+                    <form method="post" action="#">
+        
+                        <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                        <button class="search-box-button"><img src="../icons8-pesquisar-128 (2).png"></button>
+                    
+                    </form>
+                    
+                </div><!-- Search -->
+            
+            </div><!--Box Busca-->
+            
+        <div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1gYVqHTL3tTMHtZN7yKK4huWzRy_RN98&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
+
+        
+    </div>
 </body>
 </html>
