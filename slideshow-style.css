@@ -1,5 +1,7 @@
 
 /* The dots/bullets/indicators */
+.local {display: none;}
+
 .dot {
   height: 15px;
   width: 15px;
