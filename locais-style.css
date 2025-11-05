@@ -10,8 +10,10 @@
 }
 
 .corpo{
-    width: 90%;
+    /* width: 90%; */
     padding: 8%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .detalhe-lateral{
@@ -27,6 +29,9 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+    
 }
 
 .menu-locais{
@@ -145,3 +150,56 @@ input[id^="rating"][id$="-5"]:checked ~ .emojis::after { content: '😍'; }
 
 
   
+
+/* The dots/bullets/indicators */
+.local {
+    display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.img-local {
+  width: 500px;
+  height: 367px;
+  /* width: 400;
+  height: 293; */
+  align-content: center;
+  border-radius: 20px;
+}
+
+.slide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 500px;
+  align-items: center;
+}
+
+.botao-local{
+    border-radius: 22px;
+    background-color: #161269;
+    color: #fff;
+    width: 221px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
