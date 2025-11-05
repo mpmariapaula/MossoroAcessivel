@@ -1,0 +1,18 @@
+.container-mapa {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  
+  .container-mapa iframe {
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+    margin-top: auto;
+  }
